@@ -10,7 +10,7 @@ pipeline {
         stage('copying files to nginx path'){
             steps{
                 sh '''
-                    sudo cp -r * /var/www/html
+                    cp -r * /var/www/html
                 '''
             }
         }
